@@ -236,6 +236,56 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &620731370
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4943690384074146, guid: f7dcad667cf874168b436ef1a25f67f1, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 6.84
+      objectReference: {fileID: 0}
+    - target: {fileID: 4943690384074146, guid: f7dcad667cf874168b436ef1a25f67f1, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -4.8382773
+      objectReference: {fileID: 0}
+    - target: {fileID: 4943690384074146, guid: f7dcad667cf874168b436ef1a25f67f1, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4943690384074146, guid: f7dcad667cf874168b436ef1a25f67f1, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4943690384074146, guid: f7dcad667cf874168b436ef1a25f67f1, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4943690384074146, guid: f7dcad667cf874168b436ef1a25f67f1, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4943690384074146, guid: f7dcad667cf874168b436ef1a25f67f1, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4943690384074146, guid: f7dcad667cf874168b436ef1a25f67f1, type: 2}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1405055501364642, guid: f7dcad667cf874168b436ef1a25f67f1, type: 2}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1405055501364642, guid: f7dcad667cf874168b436ef1a25f67f1, type: 2}
+      propertyPath: m_Name
+      value: platform-l (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f7dcad667cf874168b436ef1a25f67f1, type: 2}
+  m_IsPrefabAsset: 0
 --- !u!1001 &1327083091
 Prefab:
   m_ObjectHideFlags: 0
@@ -330,6 +380,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   jumpForce: 20
+  runningSpeed: 2
   groundMask:
     serializedVersion: 2
     m_Bits: 256
