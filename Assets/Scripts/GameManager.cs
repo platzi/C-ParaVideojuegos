@@ -13,9 +13,18 @@ public class GameManager : MonoBehaviour {
 
     public GameState currentGameState = GameState.menu;
 
+    public static GameManager sharedInstance;
 
-	// Use this for initialization
-	void Start () {
+    void Awake()
+    {
+        if (sharedInstance == null)
+        {
+            sharedInstance = this;
+        }
+    }
+
+    // Use this for initialization
+    void Start () {
 		
 	}
 	
