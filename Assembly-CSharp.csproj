@@ -63,6 +63,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\KillZone.cs" />
+    <Compile Include="Assets\Scripts\LevelBlock.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>/Users/juangabriel/Developer/Projects/Unity/SpaceMan/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
