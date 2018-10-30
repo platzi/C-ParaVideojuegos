@@ -20,10 +20,17 @@ public class Collectable : MonoBehaviour {
 
     public int value = 1;
 
+    GameObject player;
+
     private void Awake()
     {
         sprite = GetComponent<SpriteRenderer>();
         itemCollider = GetComponent<CircleCollider2D>();
+    }
+
+    private void Start()
+    {
+        player = GameObject.Find("Player");
     }
 
     void Show(){
@@ -48,11 +55,11 @@ public class Collectable : MonoBehaviour {
                 break;
 
             case CollectableType.healthPotion:
-                //TODO: lógica de la poción de vida
+                player.GetComponent<PlayerController>().CollectHealth(this.value);
                 break;
 
             case CollectableType.manaPotion:
-                //TODO: lógica de la poción de maná
+                player.GetComponent<PlayerController>().CollectMana(this.value);
                 break;
         }
     }
