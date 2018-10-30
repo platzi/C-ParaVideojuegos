@@ -63,7 +63,9 @@ public class LevelManager : MonoBehaviour {
     }
 
     public void RemoveAllLevelBlocks(){
-
+        while(currentLevelBlocks.Count>0){
+            RemoveLevelBlock();
+        }
     }
 
     public void GenerateInitialBlocks(){
